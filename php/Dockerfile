@@ -1,6 +1,6 @@
 FROM php:8.1.1-apache
 
-COPY apache/000-default.conf /etc/apache2/sites-available/000-default.conf
+COPY ./apache/000-default.conf /etc/apache2/sites-available/000-default.conf
 
 WORKDIR /var/www/html/
 
