@@ -24,6 +24,7 @@ services:
     restart: unless-stopped
     volumes:
       - mysql-data:/var/lib/mysql
+      - ./sql/my.cnf:/etc/mysql/conf.d/my.cnf
 
 volumes:
   mysql-data:
